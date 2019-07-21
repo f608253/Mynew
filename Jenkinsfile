@@ -10,7 +10,8 @@
 
 //Declarative
 pipeline {
-    agent any
+    //agent any
+    agent { label 'cm-linux1518' }
     stages {
         stage('Example') {
             steps {
